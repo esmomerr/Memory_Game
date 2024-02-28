@@ -1,0 +1,106 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 43px auto;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.game-img{
+    width: 50px;
+}
+
+.nav-header{
+    font-family: Hahmlet;
+    font-weight: 700;
+    color: #c27d0e;
+    text-shadow: 4px 5px 15px #fda214;
+}
+
+.new-btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #fda214;
+    font-family: Hahmlet;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 13px 33px;
+}
+/* header end */
+
+
+
+
+
+
+
+/* Tablet responsive */
+@media (width >= 668px) {
+    /* header */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .new-btn{
+        font-size: 20px;
+        font-weight: 700;
+        padding: 13px 26px;
+    }
+    /* header end */
+}
+
+/* Desktop responsive*/
+@media (width >= 1200px){
+    /* header */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        gap: 52px;
+    }
+
+    .new-btn{
+        font-size: 20px;
+        font-weight: 700;
+        padding: 13px 26px;
+    }
+    /* header end */
+}
