@@ -15,7 +15,7 @@
 /* header */
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     gap: 10px;
@@ -43,14 +43,49 @@
     color: #fff;
     background-color: #fda214;
     font-family: Hahmlet;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
     border-radius: 12px;
-    padding: 13px 33px;
+    padding: 6px 12px;
+    margin-bottom: 22px;
+    border: none;
+    box-shadow: 4px 6px 8px #304859;
+
 }
 /* header end */
 
+.gameBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 225px;
+    margin: 0px auto;
+    list-style-type: none;
+    padding: 0;
+    gap: 15px;
+    li {
+        display: inline-block;
+        color: #304859;
+        color: transparent;
+        font-size: 15px;
+        padding: 7px 13px;
+        border-radius: 50%;
+        background: #304859;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 4px 6px 8px #304859;
+    }
 
+    .active{
+        background-color: #BCCED9;
+        color: #FCFCFC;
+    }
+
+    .correct{
+        background-color: #fda214;
+        color: #FCFCFC;
+    }
+}
 
 
 
@@ -61,10 +96,10 @@
     /* header */
     .header{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
-
+        margin-bottom: 40px;
     }
 
     .navbar{
@@ -74,11 +109,20 @@
     }
 
     .new-btn{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
-        padding: 13px 26px;
+        padding: 10px 18px;
     }
     /* header end */
+
+    .gameBox{
+        width: 250px;
+        gap: 18px;
+        li {
+            font-size: 16px;
+            padding: 10px 18px;
+        }
+    }
 }
 
 /* Desktop responsive*/
@@ -86,9 +130,10 @@
     /* header */
     .header{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-direction: row;
+        margin-bottom: 60px;
     }
 
     .navbar{
@@ -103,4 +148,13 @@
         padding: 13px 26px;
     }
     /* header end */
+
+    .gameBox{
+        width: 305px;
+        gap: 20px;
+        li {
+            font-size: 20px;
+            padding: 14px 24px;
+        }
+    }
 }
